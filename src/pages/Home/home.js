@@ -53,13 +53,17 @@ return(
                         const formatDate = format(new Date(games.released),"dd/MM/yyyy")
                     return(
                     <article key={games.id} className="game-item">
-                        <div className="nome">
-                            <span className="name">{games.name}</span>
+                        <div className="name-title">
+                        <span>{games.name}</span>
                         </div>
+                            
+                            
+                        
                         <div className="listas">
                             <div className="container-img">
+                             <span className="released">{`Data de lançamento: ${formatDate}`}</span> 
                               <img src={games.background_image}/>
-                               <span className="released">{`Data de lançamento: ${formatDate}`}</span> 
+                              
                                 <ul className="list">
                                 <p className="title-list">Plataformas Disponiveis:</p>
                                 {games.platforms.map(platform =>(

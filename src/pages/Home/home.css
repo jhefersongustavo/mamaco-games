@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -200px;
-    width: 100vh;
     
 }
 .home div{
@@ -78,14 +77,14 @@
 }
 .game-item{
     width: 25%;
-    position: relative;
+    
 }
 .container-img img{
     width: 100%;
     height: auto;
     border-radius: 5px;
     display: flex;
-    position: relative;
+    
 
 }
 .lista-games h2{
@@ -97,14 +96,11 @@
     margin-top: 100px;
 }
 .released{
-    position: absolute;
-    top: 10%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    right: 30px;
     opacity: 0;
     transition: opacity 0.5s ease;
     color: #ffffff;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +108,7 @@
     
     
 }
-.lista-games span{
+.game-item span{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -135,7 +131,6 @@
     align-items: center;
     margin-bottom: 2px;
     display: block;
-    position: relative;
     opacity: 0;
     z-index: 10;
     display: flex;
@@ -148,19 +143,18 @@
     opacity:0.5;
     z-index: 9;
     transition: 0.9s;
-    
 
 }
 .title-list{
     opacity: 0;
     color: #ffffff;
-    position: relative;
     margin-bottom: 5px;
     transition: opacity 0.5s ease;
 }
-.name{
+.name-title{
     text-align: center;
     padding-bottom: 30px;
+    z-index: 999;
 }
 .container-img:hover .list-platform{
         opacity: 1;
@@ -177,63 +171,80 @@
     opacity: 1;
 }
 
-@media(width:1050px) {
-    .list{
-        font-size: 10px;
-    }
-    .lista-games span{
-        font-size: 10px;
-    }
-    .home p{
-        font-size: 16px;
-    }
-    .home h1{
-        font-size: 30px;
-    }
-}
+
 @media (max-width:800px) {
         .container{
-          width: 100vh;
+            width: 62%;
         }
      
         .home{
-            background-position: -300px 0;
-            background-size: cover
+            background-position: -400px 0;
             
         }
         .home p {
-            font-size: 20px;
+            font-size: 15px;
+            margin-left: 150px;
         }
+        .home h1{
+            padding-left: 150px;
+        }
+        .home button{
+            margin-left: 150px;
+
+        }
+        
         .games-grid{
             flex-direction: column;
-       
-        
+            text-align: center;
 
         }
         .games-grid img{
-            height:auto;
-            width: 100vh;
+            position: static;
+            height: 300px;
+            width: 300px;
+            margin-left:150%
+
         }
         .released{
-            margin-left: 150%;
+            position: relative;
+            top:40px
             
         }
         .list-platform{
-            margin-left: 300%;
-            width: 100%;
+            margin-left: 500px;
+            white-space: nowrap;
         }
         .title-list{
-            text-align: center;
-            width: 700%;
+            margin-left: 500px;
+            
         }
-        .nome{
-            text-align: center;
-            width: 100vh;
+      
 
-        }
+        
         .lista-games h2{
-            margin-left: 40px;
+            margin-left: 200px;
+            white-space: nowrap;
         }
+        .listas span{
+            position: relative;
+            white-space: nowrap;
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 250px;
+        }
+        .name-title span{
+            position: relative;
+            left: 250px;
+            white-space: nowrap;
+            color: #D3D3D3;
+            
+            
+        }
+        
+            
+            
+            
+        
     }
     
 
