@@ -1,0 +1,167 @@
+.container{
+    font-family: "roboto", sans-serif;
+    color: #D3D3D3;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    background-image: url(https://blog.ebaconline.com.br/blog/wp-content/uploads/2022/12/kcnb4lkkucfipej3ngqxm-scaled-e1674744655926.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -200px;
+    
+}
+.home div{
+    padding-left: 10%;
+}
+
+.home h1{
+    margin-bottom: 40px;
+    font-size: 40px;   
+}
+.home p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.home button{
+    padding: 14px;
+    height: 30px;
+    width: 250px;
+    font-size: 17px;
+}
+.button-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #D3D3D3;
+    border: 2px solid #003366;
+    cursor: pointer;
+    transition: 0.9s;
+    
+}
+.home button:hover{
+    transform: scale(1.1);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.lista-games{
+    padding: 20px;
+
+    
+    
+}
+.games-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+    
+}
+.game-item{
+    width: 25%;
+    position: relative;
+}
+.container-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+}
+.lista-games h2{
+    margin: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.released{
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #ffffff;
+    z-index: 10;
+    
+    
+    
+}
+.lista-games span{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.list{
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    transition: 0.9s;
+    
+}
+
+.list-platform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    display: block;
+    position: relative;
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    color:#ffffff;
+    transition: opacity 0.5s ease;
+    
+}
+.container-img{
+    position: relative;
+    opacity:0.5;
+    z-index: 9;
+    transition: 0.9s;
+
+}
+.title-list{
+    opacity: 0;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 5px;
+    transition: opacity 0.5s ease;
+}
+.name{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container-img:hover .list-platform{
+        opacity: 1;
+    }
+.container-img:hover .released{
+    opacity: 1;
+}
+.container-img:hover{
+    opacity: 0.2;
+    
+
+}
+.container-img:hover .title-list{
+    opacity: 1;
+}
