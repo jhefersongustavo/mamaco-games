@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -200px;
+    width: 100vh;
     
 }
 .home div{
@@ -147,6 +148,7 @@
     opacity:0.5;
     z-index: 9;
     transition: 0.9s;
+    
 
 }
 .title-list{
@@ -191,10 +193,7 @@
 }
 @media (max-width:800px) {
         .container{
-            width: 100vh;
-            padding-left: 0;
-            padding-top: 0;
-            padding-right: 0;
+          width: 100vh;
         }
      
         .home{
@@ -207,30 +206,29 @@
         }
         .games-grid{
             flex-direction: column;
-            text-align: center;
-            justify-content: center;
+       
         
 
         }
         .games-grid img{
-            position: static;
-            height: 300px;
-            width: 500px;
-
-            display: flex;
+            height:auto;
+            width: 100vh;
         }
         .released{
             margin-left: 150%;
             
         }
         .list-platform{
-            margin-left: 280%;
+            margin-left: 300%;
+            width: 100%;
         }
         .title-list{
-            margin-left: 230%;
+            text-align: center;
+            width: 700%;
         }
         .nome{
-            margin-left: 200%;
+            text-align: center;
+            width: 100vh;
 
         }
         .lista-games h2{
