@@ -47,14 +47,15 @@ return(
             </article>
 
             <div className="lista-games">
-            <h2>Jogos que vão lançar :</h2>
+            <h2>Jogos que vão lançar </h2>
                     <div className="games-grid">
                     {game.map((games)=>{ 
                         const formatDate = format(new Date(games.released),"dd/MM/yyyy")
                     return(
                     <article key={games.id} className="game-item">
-                        <p className="name">{games.name}</p>
-                       
+                        <div className="nome">
+                            <span className="name">{games.name}</span>
+                        </div>
                         <div className="listas">
                             <div className="container-img">
                               <img src={games.background_image}/>
