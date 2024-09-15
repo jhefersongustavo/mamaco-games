@@ -190,13 +190,13 @@
         }
         .home p {
             font-size: 15px;
-            margin-left: 150px;
+            margin-left: 50px;
         }
         .home h1{
-            padding-left: 150px;
+            padding-left: 50px;
         }
         .home button{
-            margin-left: 150px;
+            margin-left: 50px;
 
         }
         
@@ -209,7 +209,7 @@
             position: static;
             height: 300px;
             width: 300px;
-            margin-left:150%
+            margin-left:100%
 
         }
         .released{
@@ -218,16 +218,16 @@
             
         }
         .list-platform{
-            margin-left: 500px;
+            margin-left: 400px;
             white-space: nowrap;
         }
         .title-list{
-            margin-left: 500px;
+            margin-left: 400px;
             
         }
         
         .lista-games h2{
-            margin-left: 200px;
+            margin-left: 100px;
             white-space: nowrap;
         }
         .listas span{
@@ -235,11 +235,11 @@
             white-space: nowrap;
             font-size: 14px;
             display: inline-block;
-            margin-left: 250px;
+            margin-left: 180px;
         }
         .name-title span{
             position: relative;
-            left: 250px;
+            left: 190px;
             white-space: nowrap;
             color: #D3D3D3;
             
