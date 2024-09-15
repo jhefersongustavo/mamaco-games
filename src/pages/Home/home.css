@@ -1,3 +1,5 @@
+
+
 .container{
     font-family: "roboto", sans-serif;
     color: #D3D3D3;
@@ -11,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     height: calc(100vh - 80px);
+    
     background-image: url(https://blog.ebaconline.com.br/blog/wp-content/uploads/2022/12/kcnb4lkkucfipej3ngqxm-scaled-e1674744655926.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,12 +176,16 @@
 
 
 @media (max-width:1000px) {
+        
+        
         .container{
-            width: 100%;
+            width: 90%;
+            
         }
      
         .home{
-            background-position: -400px 0;
+            background-size: cover;
+            background-position: center;
             
         }
         .home p {
@@ -218,8 +225,6 @@
             margin-left: 500px;
             
         }
-      
-
         
         .lista-games h2{
             margin-left: 200px;
@@ -237,7 +242,6 @@
             left: 250px;
             white-space: nowrap;
             color: #D3D3D3;
-            
             
         }
         

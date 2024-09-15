@@ -30,10 +30,14 @@ header{
     color: #D3D3D3;
 }
 @media(max-width:1000px){
+    html, body{
+        overflow-x: hidden !important; 
+    }
     header{
         justify-content: center;
         align-items: center;
-        width: 101%
+        width: 100%;
+        
        
         
     }
@@ -44,4 +48,6 @@ header{
     .menu button{
         width: 70px;
     }
+    
+
 }
