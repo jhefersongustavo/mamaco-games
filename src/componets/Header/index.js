@@ -4,10 +4,11 @@ import "./header.css"
 function Header(){
     return(
         <header>
-            <h1 className="titulo">MamacoGames</h1>
+            <Link to='/home'> <h1 className="titulo">MamacoGames</h1></Link>
             <div className="menu">
-                <button className="login">Login</button>
-                <button className="cadastrar">Cadastrar</button>
+                <Link to='/cadastro'><button className="login">Login</button></Link>
+                
+                
             </div>
 
         </header>

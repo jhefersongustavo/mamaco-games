@@ -3,6 +3,8 @@
     color: #D3D3D3;
     margin-left: 200px;
     font-size: 35px;
+    transition: all 0.9s;
+
    
 }
 header{
@@ -12,6 +14,7 @@ header{
     width: 100%;
     height: 80px;
     background-color: #003366;
+    
 }
 
 .menu{
@@ -28,6 +31,17 @@ header{
     border-radius: 5px;
     background-color: #121212;
     color: #D3D3D3;
+    cursor: pointer;
+    transition: 0.9s;
+    border:2px solid #1876ff
+}
+.titulo:hover{
+    color: #1876ff;
+    transform: scale(1.1);
+}
+.menu button:hover{
+    color: #1876ff;
+    transform: scale(1.1);
 }
 @media(max-width:1000px){
     html, body{

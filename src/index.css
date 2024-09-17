@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     
 }
 body{
-    background-color: #121212;
+    background-color: black;
     overflow-x: hidden;
+    color: #d3d3d3;
 }

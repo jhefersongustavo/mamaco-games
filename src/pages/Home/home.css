@@ -7,6 +7,14 @@
     align-items: center;
     justify-content: center;
 }
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    font-size: 30px;
+    font-family: 'roboto', sans-serif;
+}
 
 .home{
     display: flex;
@@ -46,7 +54,7 @@
     border-radius: 5px;
     background-color: #121212;
     color: #D3D3D3;
-    border: 2px solid #003366;
+    border: 2px solid #1876ff;
     cursor: pointer;
     transition: 0.9s;
     
@@ -100,7 +108,8 @@
 }
 .released{
     position: relative;
-    right: 30px;
+    top: 20px;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
     color: #ffffff;
@@ -159,6 +168,27 @@
     padding-bottom: 30px;
     z-index: 999;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-img:hover .list-platform{
         opacity: 1;
     }
