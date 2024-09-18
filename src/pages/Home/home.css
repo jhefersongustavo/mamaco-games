@@ -195,7 +195,10 @@
 
 @media (max-width: 1000px) {
     .container {
-        width: 90%;
+        width: 100%;
+    }
+    .home{
+     background-position-x: 60%;
     }
 
     .home h1 {
@@ -212,25 +215,25 @@
     }
 
     .game-item {
-        width: 100%; /* Ocupa a largura total */
+        width: 100%; 
     }
 
     .lista-games h2 {
-        margin-left: 0; /* Centraliza o título */
+        margin-left: 0; 
     }
 }
 
 @media (max-width: 768px) {
     .home {
-        padding: 0 5%; /* Ajuste do padding */
+        padding: 0 5%; 
     }
 
     .home h1 {
-        font-size: 1.8rem; /* Diminui o tamanho da fonte */
+        font-size: 1.8rem; 
     }
 
     .home p {
-        font-size: 0.9rem; /* Diminui o tamanho da fonte */
+        font-size: 0.9rem; 
     }
 
     .name-title {
@@ -240,19 +243,19 @@
 
 @media (max-width: 480px) {
     .loading {
-        font-size: 1.5rem; /* Tamanho menor para loading */
+        font-size: 1.5rem; 
     }
 
     .home h1 {
-        font-size: 1.5rem; /* Tamanho menor */
+        font-size: 1.5rem; 
     }
 
     .home p {
-        font-size: 0.8rem; /* Tamanho menor */
+        font-size: 0.8rem;
     }
 
     .game-item {
-        width: 100%; /* Faz os itens ocuparem toda a largura */
+        width: 100%; 
     }
 }
 
