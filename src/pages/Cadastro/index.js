@@ -87,7 +87,7 @@ function Cadastro(){
                     <img src="https://i.pinimg.com/564x/fc/31/ba/fc31ba76a2b5caf8336f909301dffaef.jpg"/>
                 </div>
                 <div className="cadastro">
-            <Link to='/home'><h2>Faça seu cadastro/login</h2></Link>
+            <h2>Faça seu cadastro/login</h2>
             <label>Email</label>
             <input value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Digite seu email" required/>
             <label>senha</label>

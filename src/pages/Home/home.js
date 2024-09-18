@@ -54,7 +54,7 @@ return(
             <article className="home">
                 <div>
                 <h1>Bem vindo ao MamacoGames</h1>
-                <p>Aqui você vai encontrar varios tipos de analises de jogos ,<br/> avaliações e os lançamentos de jogos que estão em alta <br/> fique a vontade para explorar!!!<br/> Faça seu cadastro em nosso site !!! </p>
+                <p>Aqui você vai encontrar varios tipo de games<br/> avaliações e os lançamentos de jogos que estão em alta <br/> fique a vontade para explorar!!!<br/> </p>
                 </div>
             </article>
             <div className="lista-games">
@@ -91,13 +91,28 @@ return(
                         </div>
                 <div className="games-grid">
                     {popularGames.map((popularGame)=>{
+                        const date = format(new Date(popularGame.released), "dd/MM/yyyy")
                         return(
                         <article key={popularGame.name} className="game-item">
                             <div className="name-title">
                              <Link to={`/jogos/${popularGame.id}`} > <span>{popularGame.name}</span></Link>
                             </div>
+                            <div className="listas">
                             <div className="container-img">
+                                <span className="released"> {`Data que foi lançado${date}`}</span>
                                 <img src={popularGame.background_image} alt={popularGame.name}/>
+                                <ul className="list">
+                                    <p className="title-list">Plataformas disponiveis: </p>
+                                    {popularGame.platforms.map(platform =>(
+                                        <li key={popularGame.id} className="list-platform">
+                                            {platform.platform.name}
+                                        </li>
+
+                                    )
+
+                                    )}
+                                </ul>
+                            </div>
                             </div>
                         </article>
                     )})}
