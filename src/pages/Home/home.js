@@ -70,12 +70,12 @@ return(
                         <div className="listas">
                             <div className="container-img">
                              <span className="released">{`Data de lançamento: ${formatDate}`}</span> 
-                             <img src={games.background_image} alt={games.name} />
+                             <img  src={games.background_image} alt={games.id} />
                               
                                 <ul className="list">
                                 <p className="title-list">Plataformas Disponiveis:</p>
                                 {games.platforms.map(platform =>(
-                                <li key={games.platforms.id} className="list-platform">
+                                <li key={platform.platform.id} className="list-platform">
                                     {platform.platform.name}
                                 </li>
                             ))}
@@ -93,7 +93,7 @@ return(
                     {popularGames.map((popularGame)=>{
                         const date = format(new Date(popularGame.released), "dd/MM/yyyy")
                         return(
-                        <article key={popularGame.name} className="game-item">
+                        <article key={popularGame.id} className="game-item">
                             <div className="name-title">
                              <Link to={`/jogos/${popularGame.id}`} > <span>{popularGame.name}</span></Link>
                             </div>
@@ -104,7 +104,7 @@ return(
                                 <ul className="list">
                                     <p className="title-list">Plataformas disponiveis: </p>
                                     {popularGame.platforms.map(platform =>(
-                                        <li key={popularGame.id} className="list-platform">
+                                        <li key={platform.platform.id} className="list-platform">
                                             {platform.platform.name}
                                         </li>
 

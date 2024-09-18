@@ -51,7 +51,7 @@ const {name} = useParams();
                 
                 </p>
                 
-                <img key={jogos.id} src={jogos.background_image} alt={jogos.name}/>
+                <img src={jogos.background_image} alt={jogos.name}/>
 
                 </div>
 

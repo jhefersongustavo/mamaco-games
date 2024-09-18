@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./header.css" 
 import { auth } from "../../firebaseConnections";
 import {signOut, onAuthStateChanged } from "firebase/auth";
-import { FacebookAuthProvider } from "firebase/auth/web-extension";
 
 function Header(){
     const [user, setUser] = useState(false);
     const [userDetail, setUserDetail] = useState({})
+    const navigate = useNavigate()
     useEffect(()=>{
         async function checkLogin(){
             onAuthStateChanged(auth,(user)=>{
@@ -27,13 +28,13 @@ function Header(){
     async function fazerLogout(){
         await signOut(auth)
         setUser(false)
-        setUserDetail({})
+        setUserDetail((navigate('/')))
     }
     return(
         <header>
             <Link to='/home'> <h1 className="titulo">MamacoGames</h1></Link>
             <div className="menu">
-                <Link to='/'><button>sair</button></Link>
+            <button onClick={fazerLogout}>sair</button>
                 
             </div>
 

@@ -22,10 +22,9 @@ function Cadastro(){
             onAuthStateChanged(auth,(user)=>{
                 if (user){
                     setUser(true);
-                    setUserDetail({
-                        uid:user.nome,
-                        email:user.email
-                    })}else{
+                    setUserDetail(
+                        navigate("/home")
+                    )}else{
                         setUser(false);
                         setUserDetail({})
                 }
@@ -60,7 +59,7 @@ function Cadastro(){
                 uid: value.user.uid,
                 email:value.user.email,
             })
-            navigate('/');
+            navigate('/home');
             
             setUser(true)
             setEmail('')
