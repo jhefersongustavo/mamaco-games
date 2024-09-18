@@ -125,6 +125,8 @@
     text-align: center;
     justify-content: center;
     font-size: 16px;
+    color: #D3D3D3;
+    transition: all 0.5s;
 }
 .list{
     position: absolute;
@@ -163,10 +165,13 @@
     margin-bottom: 5px;
     transition: opacity 0.5s ease;
 }
-.name-title{
+.name-title {
     text-align: center;
     padding-bottom: 30px;
-    z-index: 999;
+    
+}
+.name-title span:hover{
+    color: #1876ff;
 }
 
 

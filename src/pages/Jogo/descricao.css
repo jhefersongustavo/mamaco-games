@@ -1,0 +1,28 @@
+.container-detalhes{
+    font-family: "roboto", sans-serif;
+}
+.column{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column p{
+    margin: 0 50px;
+    padding: 20px;
+    flex: 1;
+    border: 2px  solid #1876ff;
+    border-radius: 20px;
+}
+.column img{
+    width: 400px;
+    flex: 1;
+    padding: 0 50px;
+    border-radius: 20px;
+}
+.title-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}

@@ -6,7 +6,7 @@ function Header(){
         <header>
             <Link to='/home'> <h1 className="titulo">MamacoGames</h1></Link>
             <div className="menu">
-                <Link to='/cadastro'><button className="login">Login</button></Link>
+                <Link to='/'><button className="login">Login</button></Link>
                 
                 
             </div>

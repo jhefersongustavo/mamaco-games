@@ -9,7 +9,8 @@ import "./home.css";
 function Home(){
         const [game, setGames] = useState([]);
         const [loading, setLoading] = useState(true);
-        const [popularGames, setPopularGames] = useState([])
+        const [popularGames, setPopularGames] = useState([]);
+        const [setid, setId] = useState('')
         
         useEffect(()=>{
             async function loadGame(){
@@ -65,12 +66,12 @@ return(
                     return(
                     <article key={games.id} className="game-item">
                         <div className="name-title">
-                        <span>{games.name}</span>
+                        <Link to={`/jogos/${games.id}`}><span>{games.name}</span></Link>
                         </div>
                         <div className="listas">
                             <div className="container-img">
                              <span className="released">{`Data de lançamento: ${formatDate}`}</span> 
-                              <img src={games.background_image} alt={games.name}/>
+                             <img src={games.background_image} alt={games.name} />
                               
                                 <ul className="list">
                                 <p className="title-list">Plataformas Disponiveis:</p>
