@@ -26,3 +26,16 @@
     padding-bottom: 50px;
     padding-top: 50px;
 }
+
+@media(max-width:800px){
+    .column{
+        flex-direction: column;
+
+    }
+    .column img{
+        margin-top: 40px;
+    }
+    .title-name{
+        text-align: center;
+    }
+}
