@@ -1,4 +1,4 @@
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import api from "../../services/api"
 import { useState, useEffect } from "react";
 import "./descricao.css";
@@ -45,9 +45,18 @@ const {name} = useParams();
                 <p className="text-description">
                 
                 {jogos.description_raw}
-                </p>
-                <img key={jogos.id} src={jogos.background_image} alt={jogos.name}/>
+                <div className="website">
+                <Link to={jogos.website}>{jogos.website}</Link>
                 </div>
+                
+                </p>
+                
+                <img key={jogos.id} src={jogos.background_image} alt={jogos.name}/>
+
+                </div>
+
+               
+                
 
             </article>
 

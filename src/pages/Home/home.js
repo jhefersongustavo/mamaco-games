@@ -55,7 +55,6 @@ return(
                 <div>
                 <h1>Bem vindo ao MamacoGames</h1>
                 <p>Aqui você vai encontrar varios tipos de analises de jogos ,<br/> avaliações e os lançamentos de jogos que estão em alta <br/> fique a vontade para explorar!!!<br/> Faça seu cadastro em nosso site !!! </p>
-                <Link to="/"><button className="button-cadastro">Cadastre-se aqui</button></Link>
                 </div>
             </article>
             <div className="lista-games">
@@ -95,7 +94,7 @@ return(
                         return(
                         <article key={popularGame.name} className="game-item">
                             <div className="name-title">
-                                <span>{popularGame.name}</span>
+                             <Link to={`/jogos/${popularGame.id}`} > <span>{popularGame.name}</span></Link>
                             </div>
                             <div className="container-img">
                                 <img src={popularGame.background_image} alt={popularGame.name}/>

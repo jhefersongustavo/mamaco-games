@@ -3,6 +3,7 @@ import { auth, db } from "../../firebaseConnections";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Cadastro(){
     const [email, setEmail] = useState("");
@@ -86,7 +87,7 @@ function Cadastro(){
                     <img src="https://i.pinimg.com/564x/fc/31/ba/fc31ba76a2b5caf8336f909301dffaef.jpg"/>
                 </div>
                 <div className="cadastro">
-            <h2>Faça seu cadastro/login</h2>
+            <Link to='/home'><h2>Faça seu cadastro/login</h2></Link>
             <label>Email</label>
             <input value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Digite seu email" required/>
             <label>senha</label>
